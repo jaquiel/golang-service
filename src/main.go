@@ -16,19 +16,19 @@ import (
 var connection *sql.DB // Database connection
 
 func main() {
-	filename := "./service/base_teste.txt"
-
 	var content []string
 	var row []string
 	var err error
 	content = nil
+
+	//Inicia Serviço
+	control.Init()
+
+	filename := "../tmp/tempfile.txt"
 	content, err = util.ReadFile(filename)
 	if err != nil {
 		log.Fatalf("Error reading file:", err)
 	}
-
-	//Inicia Serviço
-	control.Init()
 
 	//Conecta banco de dados / servico
 	connection, err = db.Open()
