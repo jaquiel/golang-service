@@ -1,7 +1,6 @@
-# Avaliação Técnica [Neoway]
+# Microserviço com GOLANG/Postgres
 
-O objetivo deste projeto é participar de avaliação técnica para o processo seletivo da empresa Neoway e consiste em um seriço de importação de arquivo texto para base de dados Postgresql.
-Foi escrito na linguagem GO.
+O objetivo deste projeto consiste em um seriço de importação de arquivo texto para base de dados Postgresql utilizando a linguagem GOLANG.
 
 ### Requisitos do projeto
 
@@ -20,14 +19,7 @@ Foi escrito na linguagem GO.
 **Desejável:**
 - Utilização das linguagen GOLANG para o desenvolvimento do serviço
 - Utilização do DB Postgres
-- Docker Conpose , com orientações para executar (arquivo readme) 
-
-
-Nota:
-Todo a estrutura relacional dev estar documentada (criação das tabelas, etc)
-Criação de um arquivo README com as instruções de instalação juntamente com as etapas necessárias para configuração.
-Você pode escolher sua abordagem de arquitetura e solução técnica.
-Apresentar-nos apenas o link do Github com o projeto.
+- Docker Compose , com orientações para executar (arquivo readme) 
 
 ___
 
@@ -106,8 +98,7 @@ Projeto foi criado utilizando estrutura de arquivos baseado em MVC:
 ```
 .
 └── src
-    ├── manage.py
-    └── assets
+    ├── assets
         └── base_teste.txt
     └── control
         └── control.go
